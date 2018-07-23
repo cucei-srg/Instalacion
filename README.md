@@ -1,4 +1,4 @@
-# :octocat: CuceiSRG Proyecto Modular - Sistema de Reportes Cucei Repositorio :octocat:
+# :octocat: CuceiSRG Proyecto Modular - Sistema de Reportes Generales Repositorio :octocat:
 
 ### Configuración entorno para el desarrollo del proyecto:
 
