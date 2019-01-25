@@ -6,7 +6,7 @@ __Instalar Git__
 - __[Descargar Git](https://git-scm.com/downloads)__ -Descargar e instalarlo.
 
 __Instalar NodeJS__
-- __[Descargar NodeJS](https://nodejs.org/es/)__ -Descargar e instalar la versión 10.6.0 o superior.
+- __[Descargar NodeJS](https://nodejs.org/es/)__ -Descargar e instalar la versión 10.15.0 o inferior.
 
 ### Configuración de Git:
 ```
@@ -20,7 +20,7 @@ __Instalación de un editor de texto__
 - __[Descargar Visual Studio Code](https://code.visualstudio.com/)__ -Descargar VS Code.
 > No importa cual se elije, los dos sirven para lo mismo.
 
-### Instalación de los frameworks a utilizar:
+### Instalación de los frameworks a utilizar APLICACIÓN MÓVIL ÚNICAMENTE:
 En este paso se debe abrir __Como modo administrador__ el CMD para que permita la instalación.
 
 ### 1.- ANGULAR CLI:
@@ -31,6 +31,29 @@ En este paso se debe abrir __Como modo administrador__ el CMD para que permita l
 
 ### 3.- IONIC:
 `npm install -g ionic`
+
+#### Instalación y Configuracion Symfony Framework para la Base de Datos
+Primeramente tener instalado XAMPP con la version de PHP __versión 7.2 (NO VERSION 7.3)__.
+Ejecutar el cmd __Como modo administrador__ y dirigirse a la ruta: `C:\xampp\php` para ejecutar los siguientes comandos:
+- `php -r "file_put_contents('symfony', file_get_contents('https://symfony.com/installer'));"`
+- `(echo @ECHO OFF & echo php "%~dp0symfony" %*) > symfony.bat`
+- `symfony`
+
+Al haber ejecutado estos comandos __uno por uno__ ahora, se instalará Composer (Manejador de dependencias de PHP) del siguiente enlace: https://getcomposer.org/Composer-Setup.exe
+Al instalar, en un CMD se dirige hacia el directorio de AdminModulosCucei en donde se haya guardado en el computador y ejecutar la sig. Sentencia: __composer install__
+Al finalizar le pedirá distintos datos, solo presione enter para omitirlos y que esten por defecto las configuraciones,solamente modificar cuando pida el nombre de la BD siendo: __cuceisrgdb__.
+
+### Creando la BD
+En el mismo CMD teniendo el XAMPP activado el APACHE Y MYSQL ejecutar las siguientes 2 sentencias:
+- `php app/console doctrine:database:create` Para crear la Base de Datos.
+- `php app/console doctrine:schema:update --force` Para crear las tablas.
+
+__NOTA: En dado caso que mande mensaje de que no reconozca php solo agreguen php a las variables del entorno__
+
+Simplemente es agregar datos genéricos en las tablas (Preguntar cuales tablas son para no hacer tan grande este documento y que datos son).
+
+### Usar el Dashboard
+Para ingresar al sistema CUCEI-SRG se debe tener un correo gmail y registrarse en el Sistema, donde al momento de registrarse les pedirá verificar su cuenta para ingresar en ella.
 
 __Documentacion sobre cada Framework y lenguajes a utilizar__
 - __[Documentacion de Angular](https://angular.io/docs)__
@@ -59,3 +82,5 @@ Sobre GitHub tomen en cuenta Hacer:
 + Mastering Issues
 + Mastering Markdown
 ```
+
+__-Actualización:25/01/2019-__
