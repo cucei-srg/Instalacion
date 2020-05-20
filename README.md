@@ -82,5 +82,18 @@ Sobre GitHub tomen en cuenta Hacer:
 + Mastering Issues
 + Mastering Markdown
 ```
+                    SERVIDOR CTA
+root:  eSd+T2a4
+usuario: +VY6Ksf!
+                          MySQL
+Password Root: mRdK95!+
+                          INGRESO
+mysql -u root -p
 
-__-Actualización:25/01/2019-__
+   FORTICLIENT
+
+IP: 148.202.253.30
+User: Miguel_Angel
+Password: Segur1dad2018
+
+__-Actualización:20/05/2020-__
